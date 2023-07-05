@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SocialActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/socRecyc"
+        android:layout_width="259dp"
+        android:layout_height="286dp"
+        app:layout_constraintBottom_toTopOf="@+id/socIDlabel"
+        tools:layout_editor_absoluteX="66dp" />
+
+    <Button
+        android:id="@+id/btnSocAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        app:layout_constraintBottom_toTopOf="@+id/btnSocBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSocBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/socDuelabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="When do you do that?"
+        app:layout_constraintBottom_toTopOf="@+id/btnSocAdd">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtvSocDue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/socTopiclabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Socialize activity"
+        app:layout_constraintBottom_toTopOf="@+id/socDuelabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtvSocTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/socIDlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="priority"
+        app:layout_constraintBottom_toTopOf="@+id/socTopiclabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtvSocID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="118dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/socRecyc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/social" />
+
+    <TextView
+        android:id="@+id/socialLabelTv"
+        android:layout_width="225dp"
+        android:layout_height="35dp"
+        android:text="Hangout Activities"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        tools:layout_editor_absoluteY="113dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">zeynepIremTermPrj</string>
+    <array name="menurecyc">
+        <item>Shopping</item>
+        <item>Work</item>
+        <item>social</item>
+    </array>
+    <array name="avatars">
+        <item>Bond</item>
+        <item>Bonnie</item>
+        <item>Tom</item>
+    </array>
+</resources>

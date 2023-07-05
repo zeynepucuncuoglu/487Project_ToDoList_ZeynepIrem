@@ -1,0 +1,16 @@
+{
+  "menus":[
+    {
+      "field":"Work",
+      "info":"*You can add your work or school related tasks here."
+    },
+    {
+      "field":"Shopping",
+      "info":"*You can add your home's need or clothes that you want to purchase here."
+    },
+    {
+      "field":"Social",
+      "info":"*You can add your social hang outs here."
+    }
+  ]
+}
